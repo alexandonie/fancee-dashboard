@@ -1,0 +1,29 @@
+.table {
+  thead {
+    th {
+      color: $gray-500;
+      border: none;
+    }
+  }
+
+  td {
+    font-weight: $font-weight-normal;
+  }
+
+  th, td {
+    &:first-of-type {
+      padding-left: $card-spacer-y;
+    }
+
+    &:last-of-type {
+      padding-right: $card-spacer-y;
+    }
+  }
+
+  tfoot {
+    th {
+      padding-top: $spacer * 4;
+      padding-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+
+  &:after {
+    content: '\f2f9';
+
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0 0 0 $spacer;
+    vertical-align: baseline;
+
+    font-family: $font-icons;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1;
+
+    border: none;
+  }
+}
+
+.dropdown-menu {
+  border-radius: 0;
+}
+
+.dropdown-menu-md {
+  min-width: 20rem;
+  transform: translateX(40%);
+
+  .text-wrap {
+    // for IE10's "text not wrapping in flex containers" issue
+    flex: 1 1 auto;
+  }
+}
+
+.dropdown-item {
+  position: relative;
+}
+
+.dropdown-divider {
+  margin: $spacer 0;
+}
+
+.dropdown-inner-scroll {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 426px;
+}
+
+@include media-breakpoint-up(sm) {
+  .dropdown-menu-md {
+    width: 24rem;
+    transform: none;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .dropdown-submenu {
+    top: auto;
+    margin-top: -(46px + $dropdown-padding-y);
+
+    &-right {
+      right: auto;
+      left: calc(100% - 1px);
+    }
+
+    &-left {
+      right: calc(100% - 1px);
+      left: auto;
+    }
+
+    z-index: $zindex-dropdown - 1;
+  }
+}

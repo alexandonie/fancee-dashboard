@@ -1,0 +1,13 @@
+label, .form-label {
+  display: inline-block;
+  margin-bottom: .5rem;
+  font-weight: $font-weight-normal;
+}
+
+.custom-control-label:before {
+  border: 1px solid $gray-400;
+}
+
+.custom-radio .custom-control-label:after {
+  background-size: 45% 45%;
+}

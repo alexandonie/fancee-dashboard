@@ -1,0 +1,35 @@
+.btn-light {
+  border: 1px solid $gray-300;
+}
+
+.btn-fixed-size {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+
+  &.btn-sm {
+    width: 24px;
+    height: 24px;
+  }
+
+  &.btn-lg {
+    width: 42px;
+    height: 42px;
+  }
+
+  .zmdi {
+    font-size: 17px;
+    line-height: 1;
+  }
+}
+
+.btn-link {
+  font-weight: $btn-font-weight;
+  border-radius: $btn-border-radius;
+
+  &:hover {
+    text-decoration: none;
+    background-color: rgba($black, 0.08);
+  }
+}

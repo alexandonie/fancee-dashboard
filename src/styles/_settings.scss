@@ -1,0 +1,236 @@
+//
+// Settings
+//
+
+$enable-shadows: true;
+
+//
+// Colors
+//
+
+// brand colors
+$brand-gradient: linear-gradient(135deg, rgba(48, 35, 174, 1) 0%, rgba(60, 41, 177, 1) 15%, rgba(201, 109, 216, 1) 100%);
+$brand: #c96dd8;
+
+// system colors
+$blue: #4a90e2;
+$red: #ff1744;
+$yellow: #ffc400;
+$green: #00d1b2;
+$cyan: #17a2b8;
+
+$white: #ffffff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #868e96;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:  #212529;
+
+$theme-colors: (
+  primary: $blue,
+  secondary: $gray-300,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $white,
+  dark: $black,
+  brand: $brand
+);
+
+$body-bg: $gray-100;
+$body-color: $black;
+
+//
+// Spacing
+//
+$spacer: 8px;
+$spacers: (
+  0: 0,
+  1: $spacer,
+  2: ($spacer * 2),
+  3: ($spacer * 3),
+  4: ($spacer * 4),
+  5: ($spacer * 5),
+  6: ($spacer * 6),
+  7: ($spacer * 7),
+  8: ($spacer * 8),
+  9: ($spacer * 9),
+  10: ($spacer * 10),
+  11: ($spacer * 11),
+  12: ($spacer * 12)
+);
+
+//
+// Icons
+//
+
+$icon-sizes: (
+  xs: 16px,
+  sm: 19px,
+  md: 29px,
+  lg: 57px,
+  xl: 77px
+);
+
+//
+// Thumbnails
+//
+
+$thumbnail-sizes: (
+  xs: $spacer * 3,
+  sm: $spacer * 5,
+  md: $spacer * 9,
+  lg: $spacer * 14
+);
+
+//
+// Typography
+//
+
+$font-family-sans-serif: Montserrat, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+$font-icons: 'Material-design-iconic-font';
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$font-weight-base: $font-weight-light;
+$line-height-base: 1.6;
+
+$h1-font-size: 1.57rem;
+$h2-font-size: 1.15rem;
+$h3-font-size: 1rem;
+$h4-font-size: 1rem;
+$h5-font-size: 1.08rem;
+$h6-font-size: 1rem;
+
+$headings-line-height: 130%;
+
+$small-font-size: 86%;
+
+$display1-size: 10.3rem;
+$display2-size: 5rem;
+$display3-size: 3.43rem;
+$display4-size: 2.29rem;
+
+$mark-bg: rgba($brand, 0.2);
+
+$blockquote-font-size: 1rem;
+
+$hr-border-color: rgba($white, .3);
+
+//
+// Buttons
+//
+
+$input-btn-padding-y: .5rem;
+$input-btn-padding-x: .857rem;
+
+$input-btn-padding-y-sm: .429rem;
+
+$input-btn-padding-y-lg: .715rem;
+$input-btn-padding-x-lg: 1.14rem;
+
+$btn-font-weight: $font-weight-medium;
+$input-placeholder-color: $gray-500;
+
+//
+// Pagination
+//
+
+$pagination-padding-y: .679rem;
+$pagination-padding-x: 1rem;
+$pagination-border-color: $gray-300;
+$pagination-hover-border-color: $gray-300;
+
+//
+// Navs
+//
+
+$nav-link-padding-y: 0;
+$nav-link-padding-x: 0;
+
+$navbar-padding-y: 0;
+$navbar-padding-x: 0;
+
+$navbar-toggler-padding-y: 0;
+$navbar-toggler-padding-x: 0;
+$navbar-toggler-font-size: 17px;
+
+$navbar-light-color: $black;
+$navbar-light-hover-color: rgba($black, .8);
+
+//
+// Dropdowns
+//
+
+$dropdown-min-width: 14rem;
+$dropdown-padding-y: $spacer;
+$dropdown-border-color: transparent;
+$dropdown-box-shadow: 0 1px 4px rgba($black, 0.08);
+
+$dropdown-link-active-color: $black;
+$dropdown-link-active-bg: $gray-100;
+
+$dropdown-item-padding-y: 0.85714rem;
+$dropdown-item-padding-x: $spacer * 3;
+
+//
+// Badge
+//
+
+$badge-font-size: 86%;
+$badge-padding-x: 0.666em;
+$badge-pill-padding-x: 0.42em;
+
+//
+// Cards
+//
+
+$card-spacer-y: ($spacer * 4);
+$card-spacer-x: ($spacer * 4);
+$card-border-width: 0px;
+$card-border-radius: 0px;
+$card-border-color: $white;
+$card-inner-border-radius: 0px;
+$card-img-overlay-padding: ($spacer * 4);
+
+//
+// Forms
+//
+
+$form-group-margin-bottom: $spacer * 3;
+$input-border-color: $gray-300;
+$input-box-shadow: none;
+
+$custom-select-padding-x: 0.75rem;
+$custom-control-indicator-bg: $white;
+$custom-control-indicator-box-shadow: none;
+$input-group-addon-bg: $gray-100;
+$input-group-addon-color: $gray-600;
+$input-disabled-bg: $gray-100;
+$custom-select-disabled-bg: $gray-100;
+$custom-select-bg-size: 20px; // In pixels because image dimensions
+$custom-select-indicator-padding: $custom-select-padding-x * 3;
+$custom-select-indicator-color: $gray-500;
+$custom-select-indicator: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 22'%3E%3Cpath fill='#{$custom-select-indicator-color}' d='M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z'/%3E%3C/svg%3E"), "#", "%23");
+
+//
+// Tables
+//
+
+$table-cell-padding: 1.15rem;
+$table-cell-padding-sm: .75rem;
+
+$table-border-color: $gray-300;
+$table-head-color: $gray-500;
+
+$table-accent-bg: $gray-100;
+$table-hover-bg: $gray-100;

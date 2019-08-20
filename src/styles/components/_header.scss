@@ -1,0 +1,172 @@
+.fancee-header-overlap {
+  margin-top: -($spacer * 9)
+}
+
+.fancee-header {
+  margin-bottom: $grid-gutter-width;
+  padding: ($spacer * 5) 0;
+  background-image: $brand-gradient;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  .navbar {
+    margin-left: -15px;
+    margin-bottom: ($spacer * 19);
+  }
+
+  .navbar-toggler {
+    color: $white;
+  }
+
+  .navbar-close {
+    margin-left: -$input-btn-padding-x;
+    color: $black;
+
+    .zmdi {
+      font-size: 20px;
+    }
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $spacer * 7;
+    height: $spacer * 7;
+    margin-right: $spacer * 3;
+    background: rgba(theme-color('primary'), 0.2);
+
+    img {
+      display: block;
+      height: 24px;
+    }
+  }
+
+  .nav-item {
+    margin-bottom: $spacer * 4;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .nav-link {
+    font-size: 0.85rem;
+    font-weight: $font-weight-normal;
+    letter-spacing: 0.07rem;
+    text-transform: uppercase;
+    color: $black;
+  }
+
+  .active .nav-link {
+    font-weight: 800;
+  }
+
+  .navbar-expand-sm .navbar-nav .nav-link,
+  .navbar-expand-md .navbar-nav .nav-link,
+  .navbar-expand-lg .navbar-nav .nav-link,
+  .navbar-expand-xl .navbar-nav .nav-link {
+    padding: 0;
+  }
+
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: -90%;
+    bottom: 0;
+
+    width: 90%;
+    padding: ($spacer * 6) ($spacer * 4);
+    background: $white;
+
+    transition: right 0.2s ease-in-out;
+    z-index: 2;
+  }
+
+  .navbar-collapse.show {
+    right: 0;
+    overflow-y: scroll;
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+
+    .dropdown {
+      position: relative;
+      margin-right: 3px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    /*
+      as navbar-right can hold anything not just links, the use of navbar-nav to make the dropdown alignment work didn't
+      make sense, therefore we're aligning the dropdown using css
+    */
+    .dropdown-menu-right {
+      left: auto;
+      right: 0;
+    }
+  }
+}
+
+
+@include media-breakpoint-up(sm) {
+  .fancee-header {
+    padding: ($spacer * 6) 0;
+
+    .navbar {
+      margin-left: 0;
+    }
+
+    .navbar-brand {
+      display: block;
+      width: auto;
+      height: auto;
+      margin-right: $spacer * 4;
+      background: none;
+    }
+  }
+}
+
+
+@include media-breakpoint-up(lg) {
+  .fancee-header-overlap {
+    margin-top: -($spacer * 12)
+  }
+
+  .fancee-header {
+    .navbar {
+      margin-bottom: ($spacer * 26);
+    }
+
+    .nav-item {
+      margin-right: $spacer * 4;
+      margin-bottom: 0;
+    }
+
+    .nav-link {
+      color: $white;
+    }
+
+    .navbar-collapse {
+      position: static;
+      padding: 0;
+      background: none;
+    }
+  }
+}
+
+
+@include media-breakpoint-down(md) {
+  .fancee-header {
+    .navbar-nav {
+      .dropdown-menu {
+        box-shadow: none;
+      }
+    }
+  }
+}

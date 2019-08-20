@@ -1,0 +1,11 @@
+.thumbnail {
+  display: block;
+  width: auto;
+  height: 100%;
+}
+
+@each $size, $value in $thumbnail-sizes {
+  .thumbnail-#{$size} {
+    max-height: $value;
+  }
+}

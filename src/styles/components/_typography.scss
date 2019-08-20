@@ -1,0 +1,83 @@
+html, body {
+  font-size: 14px;
+
+  // making sure the fonts will render the same across different web browsers
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-weight: $font-weight-light;
+  letter-spacing: 0.2px;
+}
+
+h2 {
+  font-weight: $font-weight-normal;
+}
+
+h3 {
+  font-weight: $font-weight-medium;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-weight: $font-weight-bold;
+}
+
+h5 {
+  font-weight: $font-weight-medium;
+}
+
+h6 {
+  font-weight: $font-weight-light;
+}
+
+p {
+  margin-bottom: $spacer * 3;
+}
+
+.font-weight-medium {
+  font-weight: $font-weight-medium;
+}
+
+.text-wrap {
+  white-space: normal;
+}
+
+.blockquote {
+  padding-left: $spacer * 2;
+  border-left: 5px solid $gray-200;
+
+  &.text-right {
+    padding-left: 0;
+    border-left: none;
+    padding-right: $spacer * 2;
+    border-right: 5px solid $gray-200;
+  }
+
+  &.text-center {
+    border: none;
+    padding: 0;
+  }
+
+  &-footer {
+    font-size: 100%;
+  }
+}
+
+.list-inline-stacked {
+  @extend .list-unstyled;
+  display: flex;
+  align-items: center;
+
+  li:not(:first-of-type) {
+    margin-left: -($spacer * 3);
+  }
+}
+
+// decoration helper
+.no-underline,
+.no-underline:hover {
+  text-decoration: none;
+}

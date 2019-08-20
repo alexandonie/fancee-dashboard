@@ -1,0 +1,27 @@
+.scroll-disabled {
+  height: 100%;
+  overflow: hidden;
+}
+
+[data-scrollable="true"] {
+  overflow: hidden;
+  -ms-overflow-style: none;
+}
+
+.btn .stick-top-right, // avoiding bootstrap's quick fix for badges inside buttons
+.stick-top-right {
+  position: absolute;
+  top: -4px;
+  right: 1px;
+}
+
+.vh-100 {
+  min-height: 100vh;
+}
+
+.bg-brand-gradient {
+  background-image: $brand-gradient;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
