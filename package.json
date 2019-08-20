@@ -1,0 +1,20 @@
+{
+  "name": "fancee-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fancee dashboard, a free bootstrap dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandonie/fancee-dashboard.git"
+  },
+  "author": "Alex Andonie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandonie/fancee-dashboard/issues"
+  },
+  "homepage": "https://github.com/alexandonie/fancee-dashboard#readme"
+}
