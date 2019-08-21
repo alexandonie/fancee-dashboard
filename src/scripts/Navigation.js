@@ -53,6 +53,10 @@ class Navigation {
   }
 
   init () {
+    if (!this.nav) {
+      return;
+    }
+
     this.openTrigger.addEventListener('click', e => this.open(e));
     this.closeTrigger.addEventListener('click', this.close.bind(this));
 
