@@ -69,27 +69,5 @@
     };
   })();
 
-  var ScrollableComponents = (function () {
-    return {
-      init: function () {
-        var scrollableElements = $('[data-scrollable="true"]');
-        scrollableElements.each(function (i) {
-          var elem = $(this),
-              elemOptions = elem.data(),
-              elemHasOptions = Object.keys(elemOptions).length > 1,
-              options = {};
-
-          if (elemHasOptions) {
-            delete elemOptions.scrollable;
-            options = elemOptions;
-          }
-
-          new PerfectScrollbar(scrollableElements[i], options);
-        });
-      }
-    };
-  })();
-
-  ScrollableComponents.init();
   Navigation.init();
 })();
