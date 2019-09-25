@@ -1,3 +1,5 @@
+import { debounce } from './utils';
+
 class Navigation {
   constructor () {
     this.nav = document.querySelector('#mainNavigation');
@@ -61,11 +63,11 @@ class Navigation {
     this.closeTrigger.addEventListener('click', this.close.bind(this));
 
     // close the nav (if open) when window gets resized over the desktopBreakpoint
-    this.win.addEventListener('resize', () => {
+    this.win.addEventListener('resize', debounce(() => {
       if (this.win.innerWidth > this.desktopBreakpoint && this.nav.classList.contains('show')) {
         this.close();
       }
-    });
+    }));
   }
 }
 
